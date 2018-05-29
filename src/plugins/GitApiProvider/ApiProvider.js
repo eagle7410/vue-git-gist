@@ -9,8 +9,8 @@ class ApiProvider {
 		return list || [];
 	}
 
-	async getGistContent(id) {
-		let data = await get(`${baseUrl}/gists/${id}`, {}, false);
+	async getGistContent(id, async = true) {
+		let data = await get(`${baseUrl}/gists/${id}`, {}, async);
 		let fileData = Object.values(data.files).shift();
 
 		return fileData.content || '';

@@ -1,22 +1,23 @@
 <template>
-	<div id="app" class="col-sm-6">
-		<div class="row">
-			<img src="./assets/logo.png">
+	<div id="app" class="col-sm-4">
+		<div id="head">
+			<img src="./assets/github-logo-1.png" class="logo">
+			<div class="col-sm-12 copy">
+				Авторские права © 2018 Щербина Игорь Все права защищены
+			</div>
 		</div>
-		<div class="row">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-							<router-link class="nav-link" to="/" exact>You gist list</router-link>
-						</li>
-						<li class="nav-item">
-							<router-link class="nav-link" to="/token">Git token</router-link>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<router-link class="nav-link" to="/" exact>You gist list</router-link>
+					</li>
+					<li class="nav-item">
+						<router-link class="nav-link" to="/token">Git token</router-link>
+					</li>
+				</ul>
+			</div>
+		</nav>
 		<router-view/>
 	</div>
 </template>
@@ -34,8 +35,16 @@
 		color: #007bff !important;
 	}
 
+	.copy {
+		color: white;
+	}
+
 	.page-cont {
 		margin: 5px;
+	}
+
+	#head {
+		background: #24292e;
 	}
 
 	#app {
@@ -44,6 +53,9 @@
 		-moz-osx-font-smoothing: grayscale;
 		text-align: center;
 		color: #2c3e50;
-		margin-top: 60px;
+	}
+
+	.logo {
+		height: 100px;
 	}
 </style>
