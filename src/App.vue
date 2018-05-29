@@ -1,7 +1,7 @@
 <template>
-	<div id="app" class="col-sm-4">
+	<div id="app" class="col-sm-12">
 		<div id="head">
-			<img src="./assets/github-logo-1.png" class="logo">
+			<img src="~@/assets/github-logo-1.png" class="logo">
 			<div class="col-sm-12 copy">
 				Авторские права © 2018 Щербина Игорь Все права защищены
 			</div>
