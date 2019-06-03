@@ -4,7 +4,7 @@ const baseUrl = `https://api.github.com`;
 
 class ApiProvider {
 	async getGists () {
-		let list = await get(`${baseUrl}/gists`);
+		let list = await get(`${baseUrl}/gists?per_page=200`);
 
 		return list || [];
 	}
